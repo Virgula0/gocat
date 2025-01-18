@@ -14,14 +14,14 @@ Below is a matrix that details which versions of hashcat we support:
 
 gocat requires hashcat [v6.X](https://github.com/hashcat/hashcat/releases) or higher to be compiled as a shared library. This can be accomplished by modifying hashcat's `src/Makefile` and setting `SHARED` to `1` . At this time, we also recommend disabling the brain functionality by setting `ENABLE_BRAIN` to `0`
 
-```
+```bash
 sudo make install
-sudo make set-user-permissions USER=${USER}
+make set-user-permissions USER=${USER}
 ```
 
 ## Testing
 
-```
+```bash
 make test
 ```
 
