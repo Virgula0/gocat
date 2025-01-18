@@ -35,6 +35,7 @@ set-user-permissions:
 
 checkout-subrepo:
 	@if [ "$$(id -u)" -ne 0 ]; then \
+		git submodule init; \
 		git submodule update; \
 		git pull --recurse-submodules; \
 	fi
