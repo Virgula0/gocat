@@ -1,2 +1,12 @@
 .vscode
 *.test
+*.dictstat*
+*.pid
+*.induct
+*.hcstat2
+*.hctune
+OpenCL
+kernels
+modules
+*.so
+*.outfiles
